@@ -1,0 +1,28 @@
+.component {
+  margin: 5px 0;
+  height: 31px;
+}
+
+.title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.title > span {
+  cursor: pointer;
+  user-select: none;
+  color: #000;
+  font-size: 13px;
+}
+.title > span:hover {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.action {
+  text-align: right;
+}
+.action > button {
+  position: relative;
+  top: -4px;
+  cursor: pointer;
+}

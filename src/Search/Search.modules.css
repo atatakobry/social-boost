@@ -1,0 +1,11 @@
+.component {
+  min-width: 800px;
+  width: 75%;
+  margin: 0 auto 20px;
+  padding: 10px;
+  border: 1px solid lightgrey;
+}
+
+.button {
+  cursor: pointer;
+}

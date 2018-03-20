@@ -1,0 +1,21 @@
+.app {
+  text-align: left;
+}
+
+.logo {
+  height: 65px;
+  width: auto;
+}
+
+.header {
+  background-color: #151515;
+  padding: 10px 40px;
+  color: white;
+}
+
+.content {
+  padding: 40px 0;
+}
+.content > :global.container > .row {
+  margin-bottom: 20px;
+}
