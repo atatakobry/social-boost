@@ -1,5 +1,6 @@
+import youtubeService  from './youtubeService';
 import createLocalStorage from './createLocalStorage';
 
 const localStorage = createLocalStorage();
 
-export { localStorage };
+export { youtubeService, localStorage };

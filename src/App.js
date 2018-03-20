@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import youtubeSearch from 'youtube-api-v3-search';
 import { concat, reject, isString, isEmpty } from 'lodash';
 
-import { localStorage } from './libs';
+import { youtubeService, localStorage } from './libs';
 
 import { Container, Row, Col } from 'reactstrap';
 
@@ -12,8 +11,6 @@ import Player from './Player';
 
 import logo from './logo.png';
 import styles from './App.modules.css';
-
-const API_KEY = 'AIzaSyCwI-l2BRYxBxAF9LeEYwXsfugoFJ6QTdE';
 
 class App extends Component {
   constructor() {
@@ -40,11 +37,7 @@ class App extends Component {
       return;
     }
 
-    youtubeSearch(API_KEY, {
-      q: searchQuery,
-      part: 'snippet',
-      type: 'video'
-    })
+    youtubeService.search(searchQuery)
       .then(({ items }) => {
         this.setState({
           searchResults: items
