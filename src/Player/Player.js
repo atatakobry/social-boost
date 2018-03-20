@@ -1,10 +1,21 @@
 import React from 'react';
+import YouTube from 'react-youtube';
 
-function Player() {
-  // TODO: implement me
+import styles from './Player.modules.css';
+
+function Player({ videoId }) {
   return (
-    <div>
-      Player
+    <div className={styles.component}>
+      {
+        videoId &&
+        <YouTube videoId={videoId}
+                 opts={{
+                   height: '390',
+                   width: '100%',
+                   playerVars: { autoplay: 1 }
+                 }}
+        />
+      }
     </div>
   );
 }

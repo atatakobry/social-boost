@@ -85,7 +85,7 @@ class App extends Component {
   }
 
   render() {
-    const { searchQuery, searchResults, historyItems } = this.state;
+    const { searchQuery, searchResults, historyItems, playableVideoId } = this.state;
 
     return (
       <div className={styles.app}>
@@ -118,7 +118,7 @@ class App extends Component {
               </Col>
 
               <Col xs="7">
-                <Player />
+                <Player videoId={playableVideoId} />
               </Col>
             </Row>
           </Container>
