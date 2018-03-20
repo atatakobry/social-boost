@@ -12,3 +12,10 @@
   padding: 10px 40px;
   color: white;
 }
+
+.content {
+  padding: 40px 0;
+}
+.content > :global.container > .row {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,8 @@
+.component {
+  border: 1px solid lightgrey;
+  padding: 5px 10px;
+}
+
+.title {
+  margin: 10px 0 15px 15px;
+}
